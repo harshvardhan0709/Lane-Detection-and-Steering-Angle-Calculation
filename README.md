@@ -12,6 +12,30 @@ Computer vision techniques to identify lane boundaries and compute the estimate 
 - Project the lane boundaries back onto the undistorted image of the original view  
 - Output a visual display of the lane boundaries and other related information  
 
+
+
+
+![alt text](https://github.com/harshvardhan0709/Lane-Detection-and-Steering-Angle-Calculation/blob/master/videos/2.jpg "Logo Title Text 1")
+
+
+
+![alt text](https://github.com/harshvardhan0709/Lane-Detection-and-Steering-Angle-Calculation/blob/master/videos/3.jpg "Logo Title Text 1")
+
+ 
+ ![alt text](https://github.com/harshvardhan0709/Lane-Detection-and-Steering-Angle-Calculation/blob/master/videos/1.jpg "Logo Title Text 1")
+
+ 
+ 
+ 
+ ![alt text](https://github.com/harshvardhan0709/Lane-Detection-and-Steering-Angle-Calculation/blob/master/videos/curve1.jpg "Logo Title Text 1")
+ 
+ 
+
+![alt text](https://github.com/harshvardhan0709/Lane-Detection-and-Steering-Angle-Calculation/blob/master/videos/curve.jpg "Logo Title Text 1")
+
+
+
+
 #### Steering Angle Calculation
 Data.csv file contain two value Frame number and Steering Angle 
 
@@ -51,6 +75,9 @@ To introduce nonlinearity I chose for all convolutional and fully connected laye
 | Fully connected|    	1 				|         |            |             |         |              |       1 	   |    11   |
 
 
+![alt text](https://github.com/harshvardhan0709/Lane-Detection-and-Steering-Angle-Calculation/blob/master/videos/Screenshot%20from%20output12345.mp4.png "Logo Title Text 1")
+
+
 # Required library setup
 
 run `pip install -r requirements.txt`
@@ -70,3 +97,9 @@ Use `python live_steering_pred.py` to run the model on a live webcam feed
 Use `python steering_video.py` to run the model on video
 
 #### Note : The Neural Network require lots of data to get train properly so that it can predict steering angle accurately.
+
+# Video Output Links
+
+<https://www.youtube.com/watch?v=LgjmPWEwYSo>\
+<https://www.youtube.com/watch?v=9d-zSgkwHhE>
+
