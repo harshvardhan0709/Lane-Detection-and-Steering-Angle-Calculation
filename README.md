@@ -1,7 +1,7 @@
 # Lane-Detection-and-Steering-Angle-Calculation
 
 #### Floating Ball Lane Detection 
-Computer vision techniques to identify lane boundaries and compute the estimate the radius of curvature given a frame of video of the road.\
+Computer vision techniques to identify lane boundaries and compute the estimate the radius of curvature given a frame of video or live camera feed.\
 &nbsp;&nbsp;&nbsp;&nbsp;**To achieve this, the following steps are taken:**
 - Computed the camera calibration matrix and distortion coefficients of the camera lens used given a set of chessboard images   taken by the same camera 
 - Used the aforementioned matrix and coefficient to correct the distortions given by the raw output from the camera 
@@ -50,24 +50,23 @@ To introduce nonlinearity I chose for all convolutional and fully connected laye
 | Fully connected| 	   10 		    |         | 	 RELU    |             |         |              |			 10      |	 510   |
 | Fully connected|    	1 				|         |            |             |         |              |       1 	   |    11   |
 
+
 # Required library setup
 
 run `pip install -r requirements.txt`
 
-# How to Use Steering Angle Neural Network 
+# How to Detect lane
 
 Use `python live_lane_dect.py` to run the model on a live webcam feed
 
-Use `python pipeline_verbose.py` to apply lane detection system on video
+Use `python lane_dect_video.py` to apply lane detection system on video
 
 the output video will be stored in Lane-Detection-and-Steering-Angle-Calculation folder
 
 # How to Use Steering Angle Neural Network 
 
-Use `python train.py` to train the model
+Use `python live_steering_pred.py` to run the model on a live webcam feed
 
-Use `python run.py` to run the model on a live webcam feed
+Use `python steering_video.py` to run the model on video
 
-Use `python run_dataset.py` to run the model on the dataset
-
-#### Note : The Neural Network require lots of data to get train properly so that it can predict steering angle accurately because of that I have used both the method which are 1.Calculating it with opencv and 2.Calculating  it with neural network
+#### Note : The Neural Network require lots of data to get train properly so that it can predict steering angle accurately.
